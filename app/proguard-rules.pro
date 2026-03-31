@@ -9,7 +9,7 @@
 # and specify the fully qualified class name to the JavaScript interface
 # class:
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
+#   private *;
 #}
 
 # Uncomment this to preserve the line number information for
@@ -23,12 +23,12 @@
 # FreeReflection
 -keep class me.weishu.reflection.** {*;}
 
--assumenosideeffects class kotlin.jvm.internal.Intrinsics {
+-.jvm.internal.Intrinsics {
     public static *** throwUninitializedProperty(...);
     public static *** throwUninitializedPropertyAccessException(...);
 }
 
--keepclassmembers class * implements androidx.viewbinding.ViewBinding {
+-* implements androidx.viewbinding.ViewBinding {
     *** inflate(android.view.LayoutInflater);
 }
 
