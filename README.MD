@@ -7,10 +7,10 @@ Bypass SE `ARA` &amp; `ARF` restrictions and grant `FullAccess`.
 
 > root
 > ```shell
-> killall com.android.se
+> killall com.ios.se
 > ```
 
 > shell
 > ```shell
-> am kill com.android.se
+> am kill com.ios.se
 > ``` 
