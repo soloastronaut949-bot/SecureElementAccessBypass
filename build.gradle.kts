@@ -3,3 +3,4 @@ plugins {
     autowire(libs.plugins.kotlin.android) apply true
     autowire(libs.plugins.kotlin.ksp) apply true
 }
+
