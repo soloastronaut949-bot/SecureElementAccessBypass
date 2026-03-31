@@ -36,4 +36,4 @@
 -keep class * implements androidx.viewbinding.ViewBinding {
     <init>();
     *** inflate(android.view.LayoutInflater);
-}
+}.
